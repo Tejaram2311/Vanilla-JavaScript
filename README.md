@@ -3,5 +3,5 @@ Building web app's using Vanilla JS.
 
 |  | App Name |
 | :---: | :---: |
-| 1. | [Navigation Bar](./navbar)|
-| 2. | [Todo App](./todo)|
+| 1. | [Navigation Bar](./Navigation)|
+| 2. | [Todo App](./Todo%20App)|

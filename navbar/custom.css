@@ -1,0 +1,127 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  padding: 14px 20px;
+  background-color: rgb(219, 123, 123);
+}
+
+.logo {
+  flex: 1;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  margin: 0px;
+}
+
+li {
+  list-style: none;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+li a {
+  text-decoration: none;
+  color: #252323;
+}
+
+.dHide {
+  display: none;
+}
+
+/* @media (max-width: 1024px) and (min-width: 768px) {
+} */
+
+@media (max-width: 768px) {
+  .dHide {
+    display: block;
+  }
+
+  .mHide {
+    display: none;
+  }
+
+  nav {
+    background-color: #fcab64;
+  }
+
+  .logo {
+    text-align: center;
+  }
+
+  #hamburger {
+    font-size: 20px;
+    font-weight: 800;
+  }
+
+  .mNav {
+    position: absolute;
+    background-color: transparent;
+    left: -100%;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 0px;
+    padding: 100px 0px;
+    text-align: center;
+    transition: 0.5s;
+    z-index: 5;
+  }
+
+  .mNav::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 80%;
+    content: "";
+    background-color: #fcefef;
+    z-index: 5;
+  }
+
+  .mNav::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+    opacity: 1;
+    transition: all 1s;
+  }
+
+  .open {
+    left: 0;
+    transition: 0.5s;
+  }
+
+  .mNav li {
+    position: relative;
+    z-index: 10;
+    padding-bottom: 20px;
+    width: 80%;
+  }
+
+  .mNav a {
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    color: rgba(22, 26, 20, 0.801);
+    font-size: 20px;
+  }
+
+  .close-icon {
+    position: absolute;
+    top: 20px;
+    right: 30%;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 5;
+  }
+}

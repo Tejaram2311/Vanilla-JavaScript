@@ -17,12 +17,11 @@ body {
 
 .keys {
   display: flex;
-  flex: 1;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: 40%;
+  margin-top: 30vh;
 }
 
 .key {
@@ -47,4 +46,10 @@ kbd {
   transform: scale(1.1);
   border-color: #ffc600;
   box-shadow: 0 0 1rem #ffc600;
+}
+
+@media (max-width: 425px) {
+  .keys {
+    margin-top: 25vh;
+  }
 }

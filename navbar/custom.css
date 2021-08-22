@@ -1,3 +1,7 @@
+body {
+  margin: 0px;
+}
+
 nav {
   display: flex;
   flex-direction: row;

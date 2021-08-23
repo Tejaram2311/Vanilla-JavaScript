@@ -1,0 +1,42 @@
+:root {
+  --base: #ffc600;
+  --spacing: 10px;
+  --blur: 10px;
+}
+
+body {
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.hl {
+  color: var(--base);
+}
+
+.control {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+label {
+  font-size: 18px;
+  margin-right: 4px;
+}
+
+input {
+  margin-right: 12px;
+}
+
+img {
+  width: 95%;
+  object-fit: cover;
+  margin-top: 50px;
+  background-color: var(--base);
+  padding: var(--spacing);
+  filter: blur(var(--blur));
+}

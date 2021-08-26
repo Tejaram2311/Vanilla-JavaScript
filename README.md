@@ -11,3 +11,4 @@ Building web app's using Vanilla JS.
 | 5.  | [CSS Variables](./CSS%20Variables)             | Learn using css variable                   |
 | 6.  | [Flex Panel Gallery](./Flex%20Panel%20Gallery) | Image Gallery using flex-box               |
 | 7.  | [Search Type Ahead](./Search%20Type%20Ahead)   | Search type ahead with Debouncing          |
+| 8.  | [Canvas](./Canvas)                             | HTML5 Canvas example                       |

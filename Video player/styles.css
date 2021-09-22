@@ -1,0 +1,74 @@
+html {
+  background-color: hsl(226, 42%, 51%);
+}
+
+.player {
+  max-width: 750px;
+  border: 5px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  font-size: 0;
+  overflow: hidden;
+  margin: auto;
+}
+
+.player:hover .controls {
+  visibility: visible;
+}
+
+.viewer {
+  width: 100%;
+  height: auto;
+}
+
+.controls {
+  visibility: hidden;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.controls > * {
+  flex: 1;
+}
+
+.progress {
+  display: flex;
+  position: relative;
+  flex: 10;
+  flex-basis: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 5px;
+  cursor: ew-resize;
+  margin-bottom: 4px;
+}
+
+.progress:hover {
+  height: 12px;
+}
+
+.progress-filled {
+  width: 50%;
+  background-color: #ffc600;
+  flex: 0;
+  flex-basis: 0;
+}
+
+.controls button {
+  background: none;
+  border: 0;
+  outline: 0;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  max-width: 50px;
+}
+
+.controls button:hover {
+  border: 1px solid #ffc600;
+}
